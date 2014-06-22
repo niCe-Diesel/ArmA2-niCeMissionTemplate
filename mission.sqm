@@ -1,0 +1,264 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"ace_sys_vehicledamage",
+		"ace_sys_wounds",
+		"ace_sys_repair",
+		"cacharacters2",
+		"ace_sys_map",
+		"ace_sys_viewblock",
+		"ca_modules_functions",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"ace_sys_vehicledamage",
+		"ace_sys_wounds",
+		"ace_sys_repair",
+		"cacharacters2",
+		"ace_sys_map",
+		"ace_sys_viewblock",
+		"ca_modules_functions",
+		"utes"
+	};
+	randomSeed=9512089;
+	class Intel
+	{
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=2000;
+		month=1;
+		day=1;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=8;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3125.7678,0.30630082,3338.0527};
+					id=3;
+					side="LOGIC";
+					vehicle="ACE_Vehicledamage_Enable_Cookoff";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3107.0862,0.55276906,3337.8574};
+					id=1;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3106.7385,0.21502624,3321.5623};
+					id=2;
+					side="LOGIC";
+					vehicle="ace_sys_repair_tyres";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3367.7588,19,3613.1274};
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1;
+					text="mc";
+					init="this addWeapon ""ACE_Map""; this addWeapon ""ItemGPS""; this addWeapon ""Laserdesignator""; this addWeapon ""ACRE_PRC152_ID_157""; this addWeapon ""ACRE_PRC117F_ID_1""; this addMagazine ""Laserbatteries""; _actionIndex = [[""RTE starten"", CBA_fnc_actionargument_path,[[], {[] call ION_RTE_pStartRTE}], 0, False, True, """", ""local _this && _this == mc""]] call CBA_fnc_addPlayerAction;";
+					description="Mission creator";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3127.5217,0.2652753,3303.4956};
+					id=0;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=1;
+					text="server";
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3145.051,0.058181852,3338.6636};
+					id=5;
+					side="LOGIC";
+					vehicle="ACE_Map_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3126.9299,0.20190841,3320.7981};
+					id=4;
+					side="LOGIC";
+					vehicle="ACE_Viewblock_EnableAIGrassVB_Mod";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3106.9084,0.03951963,3304.426};
+					id=7;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3532.4751,18.981739,3641.8257};
+			name="respawn_west";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=6806493;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=13016144;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=2653582;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

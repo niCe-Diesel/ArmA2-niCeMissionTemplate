@@ -1,0 +1,45 @@
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 90;
+};
+
+author="Diesel";
+OnLoadName = "";
+OnLoadMission = "";
+onLoadMissionTime = 1;
+
+aiKills = 0;
+debriefing = 1; // explicitly enabled
+showMap = 1;
+showNotePad = 0;
+showWatch = 1;
+showGPS = 1;
+enableItemsDropping = 0;
+
+// disable side and command: Only global (0) should be used on technical errors, but for map copying and stuff we might make good use of group (3), vehicle (4), direct (5)
+disableChannels[]={1,2};
+
+respawn      = "BASE";
+respawndelay = 4;
+disabledAI   = 1;
+joinUnassigned = 0;
+respawnDialog = 1;
+
+// So, alternative to restarting your game every time you change something, put this into your description.ext
+// (and remove/comment it out when you put it on the server for real! As it will slow down loading times dramatically):
+// For Debugging the ACE interact menu, among other things, disable CBA caching
+// http://forums.unitedoperations.net/index.php/topic/16134-teleport-ace-self-interact-key/
+//class CfgSettings
+//{
+//  class CBA
+//  {
+//   class Caching
+//   {
+//    compile = 0;
+//    xeh = 0;
+//    functions = 0;
+//   };
+//  };
+//};
